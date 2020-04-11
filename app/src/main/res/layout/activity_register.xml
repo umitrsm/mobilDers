@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+  <include layout="@layout/action_bar"
+      android:id="@+id/action_bar_Register"/>
+
+  <TextView
+      android:id="@+id/txtinfo1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/action_bar_Register"
+      android:layout_marginStart="20dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="20dp"
+      android:text="@string/create_new_account"
+      android:textSize="20sp" />
+  <TextView
+     android:id="@+id/txtinfo2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Bilgileriniz Lütfen"
+      android:layout_below="@+id/txtinfo1"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginLeft="20dp" />
+  
+  <EditText
+     android:id="@+id/txtusername"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txtinfo2"
+      android:hint="@string/username"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="10dp"
+       android:layout_marginEnd="10dp"
+        />
+  <EditText
+      android:id="@+id/txtemail"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txtusername"
+      android:hint="@string/Email"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      />
+  <EditText
+      android:id="@+id/txtpassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txtemail"
+      android:hint="@string/Sifre"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      />
+  <Button
+      android:id="@+id/bregister"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="HESAP OLUŞTUR"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="10dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginBottom="35dp"
+      android:background="@android:color/holo_orange_dark"
+      android:textColor="@android:color/white"
+  />
+</RelativeLayout>

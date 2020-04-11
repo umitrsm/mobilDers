@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mobilDers</string>
+    <string name="hesap_olustur">HESAP OLUSTUR</string>
+    <string name="hesabim_var">HESABIM VAR</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="create_new_account">YENİ HESAP OLUŞTUR</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="Email">Email</string>
+    <string name="Sifre">Sifre</string>
+</resources>
