@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity  {
-
+    private int i=0;
     Button bLogin;
     String pass,name;
     private Toolbar actionBarLogin;
@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity  {
                 SharedPreferences preferences = getSharedPreferences("MY_PREFS",MODE_PRIVATE);
                 String newUserDetails = name + pass;
 
+
                 String userDetails = preferences.getString(name +pass ,"Bilgiler Hatalı");
                 if(newUserDetails.equals(userDetails)) {
                     SharedPreferences.Editor editor = preferences.edit();
@@ -56,8 +57,15 @@ public class LoginActivity extends AppCompatActivity  {
                     Intent loggedIn = new Intent(LoginActivity.this, HomePage.class);
                     startActivity(loggedIn);
                 }
-                else{
-                    Toast.makeText(LoginActivity.this,"Kullanıcı Adı veya Şifre Yanlış",Toast.LENGTH_LONG).show();
+
+                else if(i<3)  {
+                    i++;
+                    Toast.makeText(LoginActivity.this,"Hatalı bilgi,Kalan Hakkınız:" +(3-i),Toast.LENGTH_LONG).show();
+
+                }
+               else{
+
+                    LoginActivity.super.onDestroy();
                 }
 
             }
