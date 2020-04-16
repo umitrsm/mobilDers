@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/sade3">
+
 
     <include layout='@layout/action_bar'
         android:id="@+id/action_bar_Login" />
@@ -39,6 +41,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:textColor="@android:color/black"
         />
 
     <EditText
@@ -46,21 +49,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtusername1"
-        android:hint="@string/Sifre"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        />
+        android:hint="@string/Sifre"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black" />
     <Button
         android:id="@+id/bLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="GIRIS YAP"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="95dp"
-        android:background="@android:color/holo_orange_dark"
+        android:background="@color/orange"
         android:textColor="@android:color/white"
+
         />
 </RelativeLayout>

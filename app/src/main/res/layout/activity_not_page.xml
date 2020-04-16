@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Email"
+    android:orientation="vertical"
+
+    >
+    <include layout="@layout/action_bar2"
+        android:id="@+id/action_bar_Email"/>
+    <TextView
+        android:id="@+id/not"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Dosyada Yazılı Notlar:"
+        android:layout_below="@+id/action_bar_Email"
+        />
+    <EditText
+        android:id="@+id/notlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/not"
+        android:textSize="20sp"
+        android:lines="8"
+        android:layout_gravity="top|start"/>
+    <Button
+        android:id="@+id/oku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oku"
+        android:background="@drawable/custom_button3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="25dp"
+
+        />
+    <Button
+        android:id="@+id/guncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Güncelle"
+        android:background="@drawable/custom_button3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="25dp"
+        />
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sil"
+        android:background="@drawable/custom_button3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="25dp"
+        />
+</LinearLayout>

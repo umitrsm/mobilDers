@@ -8,4 +8,8 @@
     <string name="password">password</string>
     <string name="Email">Email</string>
     <string name="Sifre">Sifre</string>
+    <string name="kime_email">Kime(Email)</string>
+    <string name="baslik">BASLIK</string>
+    <string name="cerik">İcerik</string>
+    <string name="ek_bilgi">Ek Bilgi</string>
 </resources>

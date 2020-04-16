@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Email"
+    android:orientation="vertical"
+
+    >
+    <include layout="@layout/action_bar2"
+        android:id="@+id/action_bar_Email"/>
+
+<TextView
+    android:id="@+id/addr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:text="Kime(Email):"
+    android:layout_below="@+id/action_bar_Email"
+    />
+<EditText
+android:id="@+id/emailadresi"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:layout_below="@+id/addr"
+android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/bas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Başlık:"
+        android:layout_below="@+id/emailadresi"
+        />
+
+    <EditText
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bas"
+        android:textSize="20sp"
+        android:inputType="textEmailSubject"/>
+
+    <TextView
+       android:id="@+id/icer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="İçerik:"
+        android:layout_below="@+id/baslik"
+        />
+    <EditText
+        android:id="@+id/icerik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icer"
+        android:textSize="20sp"
+        android:lines="8"
+        android:layout_gravity="top|start"/>
+
+
+<Button
+    android:id="@+id/bsend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Gönder"
+    android:background="@drawable/custom_button3"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+
+    />
+
+</LinearLayout>

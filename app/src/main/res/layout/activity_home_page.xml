@@ -1,9 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage">
+    tools:context=".HomePage"
+    android:background="@drawable/sade4"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/kullaniciekrani"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KULLANICI LİSTESİ"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/custom_button2"
+        android:textColor="@android:color/white"
+
+        />
+
+    <Button
+    android:id="@+id/emailekrani"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="EMAİL GÖNDER"
+    android:layout_marginEnd="50dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/kullaniciekrani"
+    android:textColor="@android:color/white"
+    android:background="@drawable/custom_button2"
+
+    />
+    <Button
+        android:id="@+id/sensorler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SENSOR LİSTESİ"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/emailekrani"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button2"
+
+        />
+    <Button
+        android:id="@+id/Bnot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOT EKRANI"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sensorler"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button2"
+
+        />
+    </RelativeLayout>

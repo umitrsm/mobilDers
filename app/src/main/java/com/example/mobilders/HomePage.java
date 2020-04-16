@@ -12,12 +12,14 @@ import android.widget.TextView;
 
 public class HomePage extends AppCompatActivity {
 
-    private Button bemail,bkullanici;
+    private Button bemail,bkullanici,bsensor,bnot;
 
-        public void init(){
-            bemail = (Button) findViewById(R.id.emailekrani);
-            bkullanici = (Button) findViewById(R.id.kullaniciekrani);
-        }
+    public void init(){
+        bemail = (Button) findViewById(R.id.emailekrani);
+        bkullanici = (Button) findViewById(R.id.kullaniciekrani);
+        bsensor = (Button) findViewById(R.id.sensorler);
+        bnot= (Button) findViewById(R.id.Bnot);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class HomePage extends AppCompatActivity {
         init();
         SharedPreferences preferences = getSharedPreferences("MY_PREFS",MODE_PRIVATE);
         String display = preferences.getString("display","");
+
         bemail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +37,7 @@ public class HomePage extends AppCompatActivity {
                 startActivity(intentEmail);
             }
         });
+
         bkullanici.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,5 +47,21 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+        bsensor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String packageContext;
+                Intent intentSensor = new Intent(HomePage.this, SensorList.class);
+                startActivity(intentSensor);
+            }
+        });
+        bnot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String packageContext;
+                Intent intentNot = new Intent(HomePage.this, NotPage.class);
+                startActivity(intentNot);
+            }
+        });
     }
 }

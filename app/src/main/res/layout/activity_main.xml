@@ -4,20 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/sade"
     tools:context=".MainActivity">
 
 
-<TextView
-   android:id="@+id/txtwelcome"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Mobil Programlama"
-    android:textSize="35sp"
-    android:textColor="@android:color/black"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="30dp"
-    />
+
 
     <ImageView
         android:layout_width="168dp"
@@ -31,12 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hesap_olustur"
-        android:background="@color/colorRedBottom"
+        android:background="@drawable/custom_button"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"
         android:textColor="@color/yazi"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
         />
 
     <Button
@@ -44,12 +35,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hesabim_var"
-        android:background="@color/colorRedBottom"
+        android:background="@drawable/custom_button"
         android:textColor="@color/yazi"
         android:layout_above="@+id/hesapOlustur"
         android:layout_marginBottom="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="80dp"
         />
 
 </RelativeLayout>

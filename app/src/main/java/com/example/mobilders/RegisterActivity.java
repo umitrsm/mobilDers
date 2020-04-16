@@ -6,19 +6,23 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.Map;
+import java.util.ArrayList;
+
 
 public class RegisterActivity extends AppCompatActivity {
     Button bRegister;
+    int i;
 
+    private ArrayList<Person> userInfo;
 
     private Toolbar actionBarRegister;
+
+
     public void init(){
         actionBarRegister = (Toolbar) findViewById(R.id.action_bar_Register);
         setSupportActionBar(actionBarRegister);
@@ -36,7 +40,7 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText etEmail=(EditText) findViewById(R.id.txtemail);
         final EditText etPassword=(EditText) findViewById(R.id.txtpassword);
         bRegister=(Button) findViewById(R.id.bregister);
-
+        userInfo = new ArrayList<>();
 
 
 
@@ -49,20 +53,19 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = etPassword.getText().toString();
                 String a="";
                 SharedPreferences.Editor editor = preferences.edit();
-                a=(newUsername + password + newUsername +"\n" + email);
-                Toast.makeText(RegisterActivity.this,a,Toast.LENGTH_LONG).show();
+                a=(newUsername +','+ password +','+ email);
                 editor.putString(newUsername + password ,newUsername +password);
+                editor.putString(newUsername ,a);
                 editor.commit();
                 Toast.makeText(RegisterActivity.this,"Kayıt Başarılı",Toast.LENGTH_LONG).show();
                 String packageContext;
                 Intent intentFinishRegister = new Intent(RegisterActivity.this ,MainActivity.class);
+                userInfo.add(new Person(newUsername,email,password));
                 startActivity(intentFinishRegister);
-                Map<String, ?> allEntries = preferences.getAll();
-                for (Map.Entry<String, ?> entry : allEntries.entrySet()) {
-                    Log.d("map values", entry.getKey() + ": " + entry.getValue().toString());
-                }
+
             }
          });
+
     }
 
 
