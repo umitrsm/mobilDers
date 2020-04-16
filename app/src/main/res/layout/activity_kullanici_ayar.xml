@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KullaniciAyar">
+
+    <include
+        android:id="@+id/action_bar_Email"
+        layout="@layout/action_bar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/adi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar_Email"
+        android:text="Kullanıcı Adı:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/adicevap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adi" />
+
+    <TextView
+        android:id="@+id/cinsiyet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adicevap"
+        android:text="Cinsiyet:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/erkek"
+        android:text="Erkek" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kadin"
+        android:text="Kadın" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/boy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar_Email"
+        android:text="Boy:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/boycevap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boy" />
+
+    <TextView
+        android:id="@+id/kilo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilo:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/kilocevap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kilo" />
+
+    <TextView
+        android:id="@+id/dogum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doğum Tarihi:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="91dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/mod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="1dp"
+        android:text="Uygulama Modu:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ToggleButton
+        android:id="@+id/toggle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="DARK"
+        android:textOn="LIGHT" />
+    <Button
+        android:id="@+id/oku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bul"
+        android:background="@drawable/custom_button3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="25dp"
+
+        />
+    <Button
+        android:id="@+id/guncelle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:background="@drawable/custom_button3"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="25dp"
+        />
+    <EditText
+        android:id="@+id/notlar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guncelle"
+        android:textSize="20sp"
+        android:lines="6"
+        android:layout_gravity="top|start"/>
+
+</LinearLayout>

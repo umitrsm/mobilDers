@@ -74,4 +74,17 @@
         android:background="@drawable/custom_button2"
 
         />
+    <Button
+        android:id="@+id/Bayar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KULLANICI BİLGİLERİ"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Bmod"
+        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button2"
+
+        />
     </RelativeLayout>

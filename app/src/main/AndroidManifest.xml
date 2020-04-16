@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Modlar"
+        <activity android:name=".KullaniciAyar"
             android:parentActivityName=".HomePage"></activity>
+        <activity
+            android:name=".Modlar"
+            android:parentActivityName=".HomePage" />
         <activity
             android:name=".NotPage"
             android:parentActivityName=".HomePage" />
