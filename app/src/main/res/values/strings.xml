@@ -12,4 +12,5 @@
     <string name="baslik">BASLIK</string>
     <string name="cerik">İcerik</string>
     <string name="ek_bilgi">Ek Bilgi</string>
+    <string name="merhaba_bu_ekranda_sens_rlerden_algilanan_ver_lere_g_re_n_ekran_parlakli_ina_g_re_bu_yazinin_reng_de_r_n_telefonu_masaya_birakirsaniz_5_san_ye_nde_uygulama_kapanir">MERHABA BU EKRANDA SENSÖRLERDEN ALGILANAN VERİLERE GÖRE;\n -EKRAN PARLAKLIĞINA GÖRE BU YAZININ RENGİ DEĞİŞİR \n -TELEFONU MASAYA BIRAKIRSANIZ 5 SANİYE İÇİNDE UYGULAMA KAPANIR</string>
 </resources>

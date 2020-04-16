@@ -12,13 +12,14 @@ import android.widget.TextView;
 
 public class HomePage extends AppCompatActivity {
 
-    private Button bemail,bkullanici,bsensor,bnot;
+    private Button bemail,bkullanici,bsensor,bnot,bmod;
 
     public void init(){
         bemail = (Button) findViewById(R.id.emailekrani);
         bkullanici = (Button) findViewById(R.id.kullaniciekrani);
         bsensor = (Button) findViewById(R.id.sensorler);
         bnot= (Button) findViewById(R.id.Bnot);
+        bmod = (Button) findViewById(R.id.Bmod);
     }
 
     @Override
@@ -61,6 +62,14 @@ public class HomePage extends AppCompatActivity {
                 String packageContext;
                 Intent intentNot = new Intent(HomePage.this, NotPage.class);
                 startActivity(intentNot);
+            }
+        });
+        bmod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String packageContext;
+                Intent intentMod = new Intent(HomePage.this, Modlar.class);
+                startActivity(intentMod);
             }
         });
     }

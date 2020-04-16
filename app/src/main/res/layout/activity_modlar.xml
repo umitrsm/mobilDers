@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Modlar">
+
+    <include
+        android:id="@+id/action_bar_Email"
+        layout="@layout/action_bar2" />
+
+    <View
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar_Email"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_Email"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/rootNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/action_bar_Email"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="@string/merhaba_bu_ekranda_sens_rlerden_algilanan_ver_lere_g_re_n_ekran_parlakli_ina_g_re_bu_yazinin_reng_de_r_n_telefonu_masaya_birakirsaniz_5_san_ye_nde_uygulama_kapanir"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
