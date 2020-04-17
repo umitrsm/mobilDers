@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomePage"
-    android:background="@drawable/sade4"
+    android:background="@drawable/katman3"
     >
 
     <Button
@@ -17,8 +17,8 @@
         android:layout_marginEnd="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="95dp"
-        android:background="@drawable/custom_button2"
-        android:textColor="@android:color/white"
+        android:background="@drawable/custom_button5"
+        android:textColor="#FA71CD"
 
         />
 
@@ -31,8 +31,8 @@
     android:layout_marginStart="50dp"
     android:layout_marginTop="20dp"
     android:layout_below="@+id/kullaniciekrani"
-    android:textColor="@android:color/white"
-    android:background="@drawable/custom_button2"
+        android:background="@drawable/custom_button5"
+        android:textColor="#FA71CD"
 
     />
     <Button
@@ -44,8 +44,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/emailekrani"
-        android:textColor="@android:color/white"
-        android:background="@drawable/custom_button2"
+        android:background="@drawable/custom_button5"
+        android:textColor="#FA71CD"
 
         />
     <Button
@@ -57,9 +57,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/sensorler"
-        android:textColor="@android:color/white"
-        android:background="@drawable/custom_button2"
-
+        android:background="@drawable/custom_button5"
+        android:textColor="#FA71CD"
         />
     <Button
         android:id="@+id/Bmod"
@@ -70,9 +69,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Bnot"
-        android:textColor="@android:color/white"
-        android:background="@drawable/custom_button2"
-
+        android:background="@drawable/custom_button5"
+        android:textColor="#FA71CD"
         />
     <Button
         android:id="@+id/Bayar"
@@ -83,8 +81,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/Bmod"
-        android:textColor="@android:color/white"
-        android:background="@drawable/custom_button2"
-
+        android:background="@drawable/custom_button5"
+        android:textColor="#FA71CD"
         />
     </RelativeLayout>

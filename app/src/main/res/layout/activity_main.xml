@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sade"
+    android:background="@drawable/katman3"
     tools:context=".MainActivity">
 
 
-
-
     <ImageView
-        android:layout_width="168dp"
-        android:layout_height="110dp"
+        android:layout_width="202dp"
+        android:layout_height="194dp"
         android:layout_below="@+id/txtwelcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/text" />
     <Button
         android:id="@+id/hesapOlustur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hesap_olustur"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button4"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="60dp"
         android:textColor="@color/yazi"
@@ -35,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hesabim_var"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/custom_button4"
         android:textColor="@color/yazi"
         android:layout_above="@+id/hesapOlustur"
         android:layout_marginBottom="20dp"

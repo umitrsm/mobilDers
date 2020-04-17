@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@drawable/sade3">
+    android:background="@drawable/katman2">
 
 
     <include layout='@layout/action_bar'
@@ -19,6 +19,7 @@
         android:layout_below="@id/action_bar_Login"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:textColor="@color/seffaf_siyah_yuzde_90"
         android:layout_marginTop="20dp"
         android:text="KULLANICI BİLGİLERİNİ GİRİNİZ"
         android:textSize="20sp" />
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Kullanıcı Bilgileri"
         android:layout_below="@+id/txtinfo1"
+        android:textColor="@color/seffaf_siyah_yuzde_90"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="10dp" />

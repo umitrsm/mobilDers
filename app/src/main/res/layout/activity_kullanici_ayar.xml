@@ -14,71 +14,70 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/adi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/action_bar_Email"
-        android:text="Kullanıcı Adı:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
     <EditText
         android:id="@+id/adicevap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adi" />
+        android:layout_below="@+id/adi"
+        android:hint="KullanıcıAdı:" />
 
-    <TextView
-        android:id="@+id/cinsiyet"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/adicevap"
-        android:text="Cinsiyet:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:layout_height="30dp">
 
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        <TextView
+            android:id="@+id/cinsiyet"
+            android:layout_width="97dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/adicevap"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:text="Cinsiyet:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/erkek"
-        android:text="Erkek" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cinsiyet"
+            app:layout_constraintTop_toTopOf="parent">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/kadin"
-        android:text="Kadın" />
-    </RadioGroup>
-    <TextView
-        android:id="@+id/boy"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/action_bar_Email"
-        android:text="Boy:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            <RadioButton
+                android:id="@+id/kadin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kadın" />
+
+            <RadioButton
+                android:id="@+id/erkek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Erkek" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
         android:id="@+id/boycevap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/boy" />
-
-    <TextView
-        android:id="@+id/kilo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Kilo:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:layout_below="@+id/boy"
+        android:hint="Boy:" />
 
     <EditText
         android:id="@+id/kilocevap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/kilo" />
+        android:layout_below="@+id/kilo"
+        android:hint="Kilo" />
 
     <TextView
         android:id="@+id/dogum"
@@ -96,51 +95,67 @@
         tools:ignore="MissingConstraints" />
 
 
-
-    <TextView
-        android:id="@+id/mod"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="180dp"
-        android:layout_marginRight="1dp"
-        android:text="Uygulama Modu:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:layout_height="67dp">
 
-    <ToggleButton
-        android:id="@+id/toggle1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:textOff="DARK"
-        android:textOn="LIGHT" />
-    <Button
-        android:id="@+id/oku"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bul"
-        android:background="@drawable/custom_button3"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginTop="25dp"
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="3dp"
+            android:checked="true"
+            android:textOff="DARK"
+            android:textOn="LIGHT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/oku"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        />
-    <Button
-        android:id="@+id/guncelle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ekle"
-        android:background="@drawable/custom_button3"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginTop="25dp"
-        />
+        <Button
+            android:id="@+id/oku"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="19dp"
+
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button3"
+            android:text="Bul"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guncelle"
+            app:layout_constraintStart_toEndOf="@+id/toggle1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/guncelle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button3"
+            android:text="Ekle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/oku"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <EditText
         android:id="@+id/notlar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/guncelle"
-        android:textSize="20sp"
+        android:layout_gravity="top|start"
         android:lines="6"
-        android:layout_gravity="top|start"/>
+        android:textSize="20sp" />
+
+
 
 </LinearLayout>
