@@ -16,7 +16,7 @@ import android.widget.ToggleButton;
 
 public class KullaniciAyar extends AppCompatActivity {
     private Toolbar actionBarEmail;
-     private EditText adi,boyu,kilo,bilgi;
+    private EditText adi,boyu,kilo,bilgi;
     private RadioButton erkek,kadin;
     private Button ekle,bul;
     private DatePicker dogum;
@@ -27,7 +27,7 @@ public class KullaniciAyar extends AppCompatActivity {
     public void init(){
         actionBarEmail = (Toolbar) findViewById(R.id.action_bar_Email);
         setSupportActionBar(actionBarEmail);
-        getSupportActionBar().setTitle("Email Gönder");
+        getSupportActionBar().setTitle("Kullanıcı Bilgileri Güncelle");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         adi = (EditText) findViewById(R.id.adicevap);
         boyu = ( EditText) findViewById(R.id.boycevap);
